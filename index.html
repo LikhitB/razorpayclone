@@ -7,8 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="./index.css">
    <title>Razorpay_Cloned</title>
-   <style>
-
+   <style type="text/tailwindcss">
       .coreftr {
          background-size: 100% 100%;
       }
@@ -68,8 +67,107 @@
       .clamp_RazX_K {
          font-size: clamp(0.5rem, 1vw + 0.6rem, 1rem);
       }
-      .headache{
+
+      .headache {
          background-color: #02042a;
+      }
+
+      @tailwind base;
+      @tailwind components;
+
+      .div_border {
+         @apply w-7 h-1 bg-green-500 my-5;
+      }
+
+      .bold_text {
+         @apply font-extrabold text-lg;
+         font-size: 25px;
+      }
+
+      .flex-prop {
+         display: flex;
+         flex-direction: column;
+         @apply gap-4
+      }
+
+      @tailwind utilities;
+
+      .slider {
+         animation: move 15s infinite linear;
+      }
+
+      @keyframes move {
+         0% {
+            top: 0;
+         }
+
+         100% {
+            top: -165%;
+         }
+      }
+
+      .names {
+         @apply font-extrabold text-2xl
+      }
+
+      .role {}
+
+      .company_img {
+         width: 180px;
+      }
+
+      .image {
+         max-width: 320px;
+         max-height: 320px;
+
+      }
+
+      .span2 {
+         @apply text-3xl font-light
+      }
+
+      .span1 {
+         @apply text-3xl font-light
+      }
+
+      .two, .three, .four, .five, .six, .seven {
+         @apply bg-gray-500
+      }
+
+      .one {
+         @apply bg-blue-500
+      }
+
+      a {
+         color: rgb(2, 123, 253);
+      }
+
+      a:hover {
+         color: rgb(7, 76, 99);
+         transition: all 1s;
+      }
+
+      .ResOp {
+         z-index: 0;
+         transition: all ease 0.5s;
+         width: 0;
+      }
+
+      .active {
+         transform: scaleX(1);
+         width: 100vw;
+         z-index: 50;
+
+      }
+
+      .RotateMenu {
+         transition: all ease 0.2s;
+         transform: rotate(-180deg);
+      }
+
+      .RotateMenu1 {
+         transition: all ease 0.8s;
+         transform: rotate(360deg);
       }
    </style>
 </head>
@@ -118,7 +216,8 @@
    </div>
    <nav class="headache flex justify-center relative">
       <!-- nav div -->
-      <div class="list-none flex gap-14 p-5 items-center text-white w-[1200px]  xl:justify-center justify-between headache">
+      <div
+         class="list-none flex gap-14 p-5 items-center text-white w-[1200px]  xl:justify-center justify-between headache">
          <div class=" flex items-center gap-7 text-white">
             <img src="./images/logo.svg" alt="" class="nav-logo">
             <li
@@ -142,7 +241,7 @@
                            <div
                               class="flex group/inner items-center gap-3 hover:shadow-lg p-5 transition-all duration-700 rounded-lg">
                               <img src="./Payments_Nav_Ic/payment-gateway.ae837f84 (1).svg" alt=""
-                              class="bg-blue-500 rounded-full w-[30px] h-[30px] group-hover/inner:bg-gradient-to-tr from-blue-300  to-blue-500 transition-all duration-1000">
+                                 class="bg-blue-500 rounded-full w-[30px] h-[30px] group-hover/inner:bg-gradient-to-tr from-blue-300  to-blue-500 transition-all duration-1000">
                               <div class="flex flex-col gap-1">
                                  <p
                                     class="text-deepblue text-[1rem] font-bold group-hover/inner:text-blue-400 transition-all duration-700">
@@ -168,7 +267,7 @@
                            <div
                               class="flex group/inner items-center gap-3 hover:shadow-lg p-5 transition-all duration-700 rounded-lg">
                               <img src="./Payments_Nav_Ic/payment-pages.eadf7c84.svg" alt=""
-                              class="bg-blue-500 rounded-full w-[30px] h-[30px] group-hover/inner:bg-gradient-to-tr from-blue-300  to-blue-500 transition-all duration-1000">
+                                 class="bg-blue-500 rounded-full w-[30px] h-[30px] group-hover/inner:bg-gradient-to-tr from-blue-300  to-blue-500 transition-all duration-1000">
                               <div class="flex flex-col gap-1">
                                  <p
                                     class="text-deepblue text-[1rem] font-bold group-hover/inner:text-blue-400 transition-all duration-700">
@@ -189,7 +288,7 @@
                                  <p class="text-gray-500">Create copy and send in 5 mins</p>
                               </div>
                            </div>
-                           
+
                            <!-- 5  -->
                            <div
                               class="flex group/inner items-center gap-3 hover:shadow-lg p-5 transition-all duration-700 rounded-lg">
@@ -469,7 +568,7 @@
                class=" hover:text-blue-400 transition cursor-pointer relative group  xl:flex hidden justify-center items-center">
                Support
                <div
-               class="bg-blue-500 w-full h-1 absolute -bottom-4 scale-0 group-hover:scale-100 transition-all duration-300">
+                  class="bg-blue-500 w-full h-1 absolute -bottom-4 scale-0 group-hover:scale-100 transition-all duration-300">
                </div>
                <div
                   class="bg-white w-[20vw] opacity-0 flex flex-col gap-4  absolute group-hover:opacity-100 group-hover:z-50 transition-all duration-300  top-[2.5rem] border rounded-lg p-8">
@@ -576,7 +675,7 @@
                      <span class="self-start">In-depth Reporting and Insights</span>
                   </li>
                </ul>
-               
+
                <div class="flex flex-col-reverse md:flex-row items-center gap-4">
                   <button
                      class="hover:bg-blue-600 w-full bg-blue-500 text-white rounded-sm gap-2 px-4 py-3 flex items-center font-bold transition justify-center  md:max-w-[10rem]">
@@ -594,7 +693,7 @@
          </div>
          <!-- GRID SECTION  -->
          <div
-         class="max-w-[1100px] grid grid-cols-1 gap-10 mt-16 place-items-center justify-center md:grid-cols-2 lg:grid-cols-3">
+            class="max-w-[1100px] grid grid-cols-1 gap-10 mt-16 place-items-center justify-center md:grid-cols-2 lg:grid-cols-3">
             <!-- box1 -->
             <div class="border rounded-xl relative group">
                <div
@@ -651,7 +750,7 @@
                      class="flex items-center gap-1 text-blue-600 group-hover:text-blue-400  transition-all duration-300 font-bold text-[1.1rem]">
                      Know
                      More <img src="./icons/chevron-right.svg" alt="" width="15"></p>
-                     <img src="./images/features-wave.svg" alt=""
+                  <img src="./images/features-wave.svg" alt=""
                      class="absolute top-3/4 right-0 opacity-0 group-hover:opacity-100 transistion-all duration-700"
                      width="80px">
                </div>
@@ -674,7 +773,7 @@
                   <img src="./images/features-wave.svg" alt=""
                      class="absolute top-3/4 right-0 opacity-0 group-hover:opacity-100 transistion-all duration-700"
                      width="80px">
-                  </div>
+               </div>
             </div>
             <!-- box-4  -->
 
@@ -708,14 +807,14 @@
                   </div>
                   <p class="text-gray-600 opacity-95">Share payment link via an email, SMS, messenger, chatbot etc. and
                      get paid immediately</p>
-                     <p
+                  <p
                      class="flex items-center gap-1 text-blue-600 group-hover:text-blue-400  transition-all duration-300 font-bold text-[1.1rem]">
                      Know
                      More <img src="./icons/chevron-right.svg" alt="" width="15"></p>
-                     <img src="./images/features-wave.svg" alt=""
+                  <img src="./images/features-wave.svg" alt=""
                      class="absolute top-3/4 right-0 opacity-0 group-hover:opacity-100 transistion-all duration-700"
                      width="80px">
-                  </div>
+               </div>
             </div>
             <!-- GRID SECTION END  -->
 
@@ -795,7 +894,8 @@
                      <img src="./icons/chevron-right.svg" alt="" width="15">
                   </p>
                </div>
-               <img src="./images/buisness-banking.png" alt="" class="absolute right-0 lg:flex hidden -z-50 max-w-[100%]">
+               <img src="./images/buisness-banking.png" alt=""
+                  class="absolute right-0 lg:flex hidden -z-50 max-w-[100%]">
             </div>
             <!-- right  -->
          </div>
@@ -803,9 +903,9 @@
          <div class="grid grid-cols-1 text-white my-10 gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-[950px]">
             <!-- box1  -->
             <div
-            class="rounded-xl relative group border border-slate-700 shadow hover:shadow-[0px_0px_940px_0px_rgb(0,0,0)] transition">
+               class="rounded-xl relative group border border-slate-700 shadow hover:shadow-[0px_0px_940px_0px_rgb(0,0,0)] transition">
                <div
-               class="flex flex-col gap-6 pl-6 py-8 group-hover:shadow-2xl transition-all duration-500 shadow-blue-300">
+                  class="flex flex-col gap-6 pl-6 py-8 group-hover:shadow-2xl transition-all duration-500 shadow-blue-300">
                   <div class="flex items-center gap-2">
                      <img src="./images/current-icon.svg" alt="" width="45" height="45"
                         class="bg-blue-600 rounded-full group-hover:bg-gradient-to-tr from-blue-300 to-blue-600 transition-all duration-400">
@@ -813,7 +913,7 @@
                   </div>
                   <p class="text-gray-600 opacity-95">Share payment link via an email, SMS, messenger, chatbot etc. and
                      get paid immediately</p>
-                     <p
+                  <p
                      class="flex items-center gap-1 text-blue-600 group-hover:text-blue-400  transition-all duration-300 font-bold text-[1.1rem]">
                      Know
                      More <img src="./icons/chevron-right.svg" alt="" width="15"></p>
@@ -834,7 +934,7 @@
                   <p class="text-gray-600 opacity-95">Share payment link via an email, SMS, messenger, chatbot etc. and
                      get paid immediately</p>
                   <p
-                  class="flex items-center gap-1 text-blue-600 group-hover:text-blue-400  transition-all duration-300 font-bold text-[1.1rem]">
+                     class="flex items-center gap-1 text-blue-600 group-hover:text-blue-400  transition-all duration-300 font-bold text-[1.1rem]">
                      Know
                      More <img src="./icons/chevron-right.svg" alt="" width="15"></p>
                   <img src="./images/features2-wave.svg" alt=""
@@ -916,7 +1016,7 @@
                Know
                More <img src="./icons/chevron-right.svg" alt="" width="15"></p>
          </div>
-         
+
          <!-- box-3  -->
          <div
             class="flex flex-col gap-2 overflow-hidden bg bg-white shadow-lg rounded-lg py-10 px-9 cursor-pointer hover:scale-105 transition-all duration-300 relative group">
@@ -940,11 +1040,11 @@
 
          <!-- BOX-4  -->
          <div
-         class="flex flex-col gap-2 overflow-hidden bg bg-white shadow-lg rounded-lg py-10 px-9 cursor-pointer hover:scale-105 transition-all duration-300 relative group">
+            class="flex flex-col gap-2 overflow-hidden bg bg-white shadow-lg rounded-lg py-10 px-9 cursor-pointer hover:scale-105 transition-all duration-300 relative group">
             <img src="./" alt="">
             <img src="./images/payment-button-bg.svg" alt="" class="absolute left-0 top-0 bottom-0 group-hover:scale-0">
             <img src="./images/payment-button-hoverbg.svg" alt=""
-            class="absolute left-0 top-0 bottom-0 scale-0 group-hover:scale-100">
+               class="absolute left-0 top-0 bottom-0 scale-0 group-hover:scale-100">
             <div class="flex flex-col gap-3">
                <img src="./images/instant-settlement-icon.svg" alt="" width="40" class="bg-blue-600 rounded-full">
                <h1 class="font-extrabold text-xl">Payment-button</h1>
@@ -959,7 +1059,7 @@
                More <img src="./icons/chevron-right.svg" alt="" width="15"></p>
          </div>
 
-         
+
          <div
             class="flex flex-col gap-2 overflow-hidden bg bg-white shadow-lg rounded-lg py-10 px-9 cursor-pointer hover:scale-105 transition-all duration-300 relative group">
             <img src="./" alt="">
@@ -979,7 +1079,7 @@
                Know
                More <img src="./icons/chevron-right.svg" alt="" width="15"></p>
          </div>
-         
+
 
          <div
             class="flex flex-col gap-2 overflow-hidden bg bg-white shadow-lg rounded-lg py-10 px-9 cursor-pointer hover:scale-105 transition-all duration-300 relative group">
@@ -1003,7 +1103,7 @@
       </div>
    </section>
    <section
-   class="max-w-[100%] bg-[url(images/core-features-sectionBg.svg)] coreftr flex flex-col items-center lg:pt-[12rem] lg:pb-[10rem] py-[25rem] px-[3rem] md:px-[5rem] md:pt-[1rem] md:pb-[20rem] bg-no-repeat">
+      class="max-w-[100%] bg-[url(images/core-features-sectionBg.svg)] coreftr flex flex-col items-center lg:pt-[12rem] lg:pb-[10rem] py-[25rem] px-[3rem] md:px-[5rem] md:pt-[1rem] md:pb-[20rem] bg-no-repeat">
       <!-- <img src="./images/core-features-sectionBg.svg" alt=""> -->
       <div class="text-white max-w-[1080px] py-48 lg:py-2">
          <div class="flex flex-col self-start md:items-center">
@@ -1027,7 +1127,7 @@
                <p>With plugins for all major platforms and languages, integrate and go live with Razorpay in less than
                   an hour.</p>
             </div>
-            
+
             <div class="flex flex-col gap-5">
                <img src="./images/api-driven-icon.svg" alt="" class="w-[40px]">
                <p class="font-extrabold text-lg">API Driven</p>
@@ -1040,7 +1140,7 @@
                <p class="font-extrabold text-lg">100+ payment modes</p>
                <p>Offer your customers the luxury of all payment modes including Credit/Debit cards, Netbanking, UPI,
                   Wallets etc.</p>
-               </div>
+            </div>
 
             <div class="flex flex-col gap-5">
                <img src="./images/simple-pricing.svg" alt="" class="w-[40px]">
@@ -1103,7 +1203,8 @@
    </section>
    <section class="max-w-full flex flex-col items-center relative md:px[0rem] px-[4rem]">
       <div>
-         <img src="./images/feature-section1-dottedrows.png" alt="" class="absolute left-36 top-40 -z-50 hidden md:flex">
+         <img src="./images/feature-section1-dottedrows.png" alt=""
+            class="absolute left-36 top-40 -z-50 hidden md:flex">
       </div>
       <div class="m-16 flex flex-col items-center">
          <h2 class="md:text-center font-extrabold text-[15vw] md:text-3xl">An Experience <br>People Love To Talk</h2>
@@ -1114,7 +1215,7 @@
          <!-- arrow-1  -->
          <img src="./icons/chevron-left.svg" alt=""
             class="bg-gray-200  rounded-full p-3 left_arrow hidden md:flex max-w-[50vw]">
-            
+
          <!-- img + about + dots  -->
          <div class="w-full flex flex-col gap-8">
             <!-- inner div with overflow  -->
@@ -1175,7 +1276,7 @@
                   <li class="flex items-center gap-1"><img src="./icons/greenTick.svg" alt="">Quick onboarding</li>
                   <li class="flex items-center gap-1"><img src="./icons/greenTick.svg" alt="">Access to entire product
                      suite</li>
-                     <li class="flex items-center gap-1"><img src="./icons/greenTick.svg" alt="">API access</li>
+                  <li class="flex items-center gap-1"><img src="./icons/greenTick.svg" alt="">API access</li>
                   <li class="flex items-center gap-1"><img src="./icons/greenTick.svg" alt="">24x7 support</li>
                </div>
 
@@ -1196,7 +1297,7 @@
    <div>
       <footer style="background: linear-gradient(to right, #eef9fe, #edf7ff) max-w-full">
          <div
-         class="w-10/12 pt-[400px] pb-10 md:pt-[350px] md:my-0 md:w-11/12 max-w-[1080px] mx-auto flex flex-col space-y-6 lg:space-y-0 lg:space-x-4 lg:flex-row justify-between">
+            class="w-10/12 pt-[400px] pb-10 md:pt-[350px] md:my-0 md:w-11/12 max-w-[1080px] mx-auto flex flex-col space-y-6 lg:space-y-0 lg:space-x-4 lg:flex-row justify-between">
             <!-- column - 1 -->
             <div class="flex flex-col md:max-w-[340px] lg:max-w-[260px]">
                <img src=".//images/logo-dark.svg" loading="lazy" width="120px" height="24px" />
@@ -1244,7 +1345,7 @@
                <div class="flex items-start space-x-4">
                   <img src=".//images/footer-certificate-1.png" loading="lazy" width="92" height="40"
                      class="cursor-pointer" />
-                     <img src=".//images/footer-certificate-2.jpg" loading="lazy" width="122" height="80"
+                  <img src=".//images/footer-certificate-2.jpg" loading="lazy" width="122" height="80"
                      class="cursor-pointer" />
                </div>
             </div>
@@ -1259,14 +1360,14 @@
                      <ul class="space-y-2">
                         <li>
                            <a href="#"
-                           class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">RazorpayX</a>
+                              class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">RazorpayX</a>
                         </li>
                         <li>
                            <a href="#"
                               class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Current
                               Accounts</a>
-                           </li>
-                           <li>
+                        </li>
+                        <li>
                            <a href="#"
                               class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Payouts</a>
                         </li>
@@ -1282,7 +1383,7 @@
                         </li>
                         <li>
                            <a href="#"
-                           class="relative font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
+                              class="relative font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
                               View Live Demo
                               <span
                                  class="text-white font-mullish uppercase bg-green-500 rounded-sm text-xs font-bold p-1">New</span>
@@ -1304,7 +1405,7 @@
                            <a href="#"
                               class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Instant
                               Settlements</a>
-                           </li>
+                        </li>
                         <li>
                            <a href="#"
                               class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Working
@@ -1345,7 +1446,7 @@
                            <a href="#"
                               class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Refer
                               and Earn</a>
-                           </li>
+                        </li>
                         <li>
                            <a href="#"
                               class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
@@ -1371,7 +1472,7 @@
                            <a href="#"
                               class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Freelancer
                               Payments</a>
-                           </li>
+                        </li>
                         <li>
                            <a href="#"
                               class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">International</a>
@@ -1574,59 +1675,59 @@
                            <a href="#"
                               class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Terms
                               of Use</a>
-                           </li>
-                           <li>
+                        </li>
+                        <li>
                            <a href="#"
                               class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Privacy
                               Policy</a>
                         </li>
                         <li>
                            <a href="#"
-                           class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Grievance
+                              class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Grievance
                               Redressal</a>
                         </li>
                         <li>
                            <a href="#"
-                           class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
-                           Responsible Disclosure
-                        </a>
-                     </li>
-                     <li>
-                        <a href="#"
-                        class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
-                        Partners
-                     </a>
-                  </li>
-                  <li>
-                     <a href="#"
-                     class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
-                     White Papers
-                  </a>
-               </li>
-               <li>
-                  <a href="#"
-                  class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
-                  Corporate Information
-               </a>
-            </li>
-         </ul>
-      </div>
-      <div>
-         <p class="font-mullish uppercase font-bold text-gray2 mb-1 mt-3">
-            HELP & SUPPORT
-         </p>
-         <ul class="space-y-2">
-            <li>
-               <a href="#"
-               class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Support</a>
-            </li>
-            <li>
-               <a href="#"
-               class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Knowledge
-               base</a>
-            </li>
-         </ul>
-      </div>
+                              class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
+                              Responsible Disclosure
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#"
+                              class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
+                              Partners
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#"
+                              class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
+                              White Papers
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#"
+                              class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">
+                              Corporate Information
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div>
+                     <p class="font-mullish uppercase font-bold text-gray2 mb-1 mt-3">
+                        HELP & SUPPORT
+                     </p>
+                     <ul class="space-y-2">
+                        <li>
+                           <a href="#"
+                              class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Support</a>
+                        </li>
+                        <li>
+                           <a href="#"
+                              class="font-mullish font-medium text-lightBlue500 hover:text-grayBlue transition-all duration-200">Knowledge
+                              base</a>
+                        </li>
+                     </ul>
+                  </div>
                   <div>
                      <p class="font-mullish uppercase font-bold text-gray2 mb-1 mt-6">
                         FIND US ONLINE
